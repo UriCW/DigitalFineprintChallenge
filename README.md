@@ -20,7 +20,6 @@ For example, the proper divisors of 15 (that is, the positive divisors of 15 tha
 Write a function to determine whether a given number is perfect, abundant, or deficient. Use a module called "perfect_numbers" with a sub-module called "classify".
 
 ```python
-<?php
 from perfect_numbers import classify
 
 # classify() returns 'perfect', 'abundant', or 'deficient'
