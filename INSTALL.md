@@ -1,15 +1,26 @@
 # Installation instructions
 
 Create a virtual environment
-$virtualenv -p python3 venv
 
+```bash
+$mkdir venv
+$virtualenv -p python3 venv
+```
 Activate virtual environment
+
+```bash
 $source ./venv/bin/activate
+```
 
 Install requirements
+
+```bash
 $pip install -r requirements.txt
+```
 
 Run the Flask application
-$python application.py
 
+```bash
+$python application.py
+``` 
 And browse to http://localhost:5001
