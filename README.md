@@ -1,6 +1,6 @@
 # Perfect Number Challenge (Python 3/Flask) #
 
-We would like you to write a function in Python 3 and to determine whether a given number is [perfect](https://en.wikipedia.org/wiki/Perfect_number), [abundant](https://en.wikipedia.org/wiki/Perfect_number), or [deficient](https://en.wikipedia.org/wiki/Deficient_number). This is based on the classification scheme for natural numbers by [Nicomachus](https://en.wikipedia.org/wiki/Nicomachus). This should then be placed into a Flask application as an API.
+We would like you to write a function in Python 3 and to determine whether a given number is [perfect](https://en.wikipedia.org/wiki/Perfect_number), [abundant](https://en.wikipedia.org/wiki/Abundant_number), or [deficient](https://en.wikipedia.org/wiki/Deficient_number). This is based on the classification scheme for natural numbers by [Nicomachus](https://en.wikipedia.org/wiki/Nicomachus). This should then be placed into a Flask application as an API.
 
 ### Perfect, Abundant, and Deficient ###
 

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title> Number classifier </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            
+            function update(){
+                //Update the result element
+                val = document.getElementById("num").value
+                res=document.getElementById("result")
+                res.innerHTML=""; 
+                //Ensures it's a number
+                if (isNaN(val)){
+                    res.innerHTML = "Not a number"
+                    return
+                }
+                num = Number(val)
+                // And an integer
+                if (!Number.isInteger(num)){
+                    res.innerHTML="Not an integer";
+                    return
+                }
+                //Make sure it's not too big
+                if (num >= 99999999999){
+                    res.innerHTML=num+" is too big for me to handle";
+                    return
+                }
+                // just to make sure again
+                if (/^[0-9]*$/.test(val)){
+                    req_url="/"+val
+                    $.getJSON(req_url,function(data){
+                        txt=data.number+" is a "+data.classification+" number";
+                        res.innerHTML=txt
+                        return
+                    })
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Number classifier </h1>
+        <h2> Give me some number </h2>
+        <form class="target">
+            <input type="text" id="num" oninput="update()" >
+        </form>
+        <p id="result"></p>
+    </body>
+</html>
